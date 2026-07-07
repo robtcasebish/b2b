@@ -9,7 +9,7 @@
   <link rel="icon" href="https://vonclaro.com/favicon.png" />
 </head>
 <body>
-<div class="announcement"><div class="container"><div class="announcement__inner"><span class="announcement__dot"></span><p class="announcement__text">VonClaro is celebrating <strong>10 years</strong>. Thank you to every client and collaborator who has been part of the journey.</p><span class="announcement__dot"></span></div></div></div>
+<div class="announcement"><div class="container"><p class="announcement__text">VonClaro is <strong>10 years</strong> in. Thank you to every client and collaborator who has been part of it.</p></div></div>
 
 <nav class="nav">
   <div class="container">
@@ -30,441 +30,343 @@
   <div class="container">
     <div class="hero__grid">
       <div class="hero__copy">
-        <div class="hero__kicker">
-          <span class="eyebrow eyebrow--green">VonClaro B2B</span>
-        </div>
+        <div class="hero__kicker"><span class="sec-mark sec-mark--dark">VonClaro B2B / Revenue Systems</span></div>
         <h1 class="hero__h1">Your channels are running.<br><em>Your revenue system is not.</em></h1>
-        <p class="hero__sub">Paid, content, SEO, and email are active. But attribution is broken, CRM source data is incomplete, and you still cannot tell what is actually creating pipeline. Budget decisions are made on guesswork, and CAC keeps climbing without a clear explanation.</p>
+        <p class="hero__sub">Paid, content, SEO, and email are all active. But attribution stops at last click, CRM source data is incomplete, and you still cannot say what is actually creating pipeline. Budget decisions run on guesswork, and CAC keeps climbing without a clear explanation.</p>
         <div class="hero__actions">
           <a href="#audit" class="btn btn--primary">Get My Revenue Diagnostic</a>
           <a href="#sysmap" class="btn btn--ghost">See the System Map</a>
         </div>
-        <p class="hero__trust">Written diagnostic delivered within 2 business days &middot; B2B SaaS only</p>
+        <p class="hero__trust">Written diagnostic within 2 business days &middot; B2B SaaS only</p>
       </div>
 
-      <!-- Revenue System Diagnostic Widget -->
-      <div class="rsd-widget">
-        <div class="rsd-widget__header">
-          <div>
-            <div class="rsd-widget__label">Revenue System Diagnostic</div>
-            <div class="rsd-widget__sub">B2B SaaS Account Review</div>
+      <!-- Annotated revenue audit artifact -->
+      <aside class="audit-doc" aria-label="Revenue system diagnostic example">
+        <div class="audit-doc__head">
+          <div class="audit-doc__title">
+            <span class="audit-doc__kicker">Revenue System Diagnostic</span>
+            <span class="audit-doc__scope">B2B SaaS account review</span>
           </div>
-          <div class="rsd-widget__badge">Pipeline attribution unclear</div>
+          <dl class="audit-doc__meta">
+            <div><dt>Ref</dt><dd>VC-RSD</dd></div>
+            <div><dt>Scope</dt><dd>Demand to revenue</dd></div>
+            <div><dt>Status</dt><dd class="is-leak">3 disconnects</dd></div>
+          </dl>
         </div>
-        <div class="rsd-stages">
-          <div class="rsd-stage">
-            <div class="rsd-stage__left">
-              <span class="rsd-stage__num">01</span>
-              <span class="rsd-stage__dot rsd-stage__dot--ok"></span>
-              <span class="rsd-stage__name">Paid Demand</span>
-            </div>
-            <div class="rsd-stage__right">
-              <span class="rsd-stage__note">Google + LinkedIn running</span>
-              <span class="rsd-badge rsd-badge--ok">Active</span>
-            </div>
+        <ol class="ledger">
+          <li class="ledger__row">
+            <span class="ledger__code">01</span>
+            <span><span class="ledger__name">Paid Demand</span><span class="ledger__note">Google and LinkedIn live</span></span>
+            <span class="ledger__state ledger__state--ok">Active</span>
+          </li>
+          <li class="ledger__row ledger__row--leak ledger__row--break">
+            <span class="ledger__code">02</span>
+            <span><span class="ledger__name">Attribution</span><span class="ledger__note">Last click only, channels blind</span></span>
+            <span class="ledger__state ledger__state--leak">Broken</span>
+          </li>
+          <li class="ledger__row ledger__row--leak ledger__row--break">
+            <span class="ledger__code">03</span>
+            <span><span class="ledger__name">Conversion Infrastructure</span><span class="ledger__note">Pages not matched to intent</span></span>
+            <span class="ledger__state ledger__state--leak">Leaking</span>
+          </li>
+          <li class="ledger__row">
+            <span class="ledger__code">04</span>
+            <span><span class="ledger__name">Content and SEO</span><span class="ledger__note">Producing, not converting</span></span>
+            <span class="ledger__state ledger__state--warn">Disconnected</span>
+          </li>
+          <li class="ledger__row">
+            <span class="ledger__code">05</span>
+            <span><span class="ledger__name">Email and Nurture</span><span class="ledger__note">Not tied to paid signal</span></span>
+            <span class="ledger__state ledger__state--warn">Siloed</span>
+          </li>
+          <li class="ledger__row ledger__row--leak ledger__row--break">
+            <span class="ledger__code">06</span>
+            <span><span class="ledger__name">Pipeline Attribution</span><span class="ledger__note">Revenue not tied to channels</span></span>
+            <span class="ledger__state ledger__state--leak">Unknown</span>
+          </li>
+        </ol>
+        <div class="audit-doc__foot">
+          <div class="audit-doc__finding">
+            <span class="audit-doc__finding-label">Primary finding</span>
+            <span class="audit-doc__finding-val">3 critical disconnects between spend and revenue</span>
           </div>
-          <div class="rsd-stage rsd-stage--issue">
-            <div class="rsd-stage__left">
-              <span class="rsd-stage__num">02</span>
-              <span class="rsd-stage__dot rsd-stage__dot--leak"></span>
-              <span class="rsd-stage__name">Attribution</span>
-            </div>
-            <div class="rsd-stage__right">
-              <span class="rsd-stage__note">Last-click only, channels blind</span>
-              <span class="rsd-badge rsd-badge--leak">Broken</span>
-            </div>
-          </div>
-          <div class="rsd-stage rsd-stage--issue">
-            <div class="rsd-stage__left">
-              <span class="rsd-stage__num">03</span>
-              <span class="rsd-stage__dot rsd-stage__dot--leak"></span>
-              <span class="rsd-stage__name">Conversion Infrastructure</span>
-            </div>
-            <div class="rsd-stage__right">
-              <span class="rsd-stage__note">Landing pages not converting</span>
-              <span class="rsd-badge rsd-badge--leak">Leaking</span>
-            </div>
-          </div>
-          <div class="rsd-stage rsd-stage--warn">
-            <div class="rsd-stage__left">
-              <span class="rsd-stage__num">04</span>
-              <span class="rsd-stage__dot rsd-stage__dot--warn"></span>
-              <span class="rsd-stage__name">Content and SEO</span>
-            </div>
-            <div class="rsd-stage__right">
-              <span class="rsd-stage__note">Producing, not converting</span>
-              <span class="rsd-badge rsd-badge--warn">Disconnected</span>
-            </div>
-          </div>
-          <div class="rsd-stage rsd-stage--warn">
-            <div class="rsd-stage__left">
-              <span class="rsd-stage__num">05</span>
-              <span class="rsd-stage__dot rsd-stage__dot--warn"></span>
-              <span class="rsd-stage__name">Email and Nurture</span>
-            </div>
-            <div class="rsd-stage__right">
-              <span class="rsd-stage__note">Not connected to paid signal</span>
-              <span class="rsd-badge rsd-badge--warn">Siloed</span>
-            </div>
-          </div>
-          <div class="rsd-stage rsd-stage--issue">
-            <div class="rsd-stage__left">
-              <span class="rsd-stage__num">06</span>
-              <span class="rsd-stage__dot rsd-stage__dot--leak"></span>
-              <span class="rsd-stage__name">Pipeline Attribution</span>
-            </div>
-            <div class="rsd-stage__right">
-              <span class="rsd-stage__note">Revenue not tied to channels</span>
-              <span class="rsd-badge rsd-badge--leak">Unknown</span>
-            </div>
-          </div>
+          <a href="#audit" class="btn btn--primary btn--sm">Get Mine</a>
         </div>
-        <div class="rsd-widget__footer">
-          <div>
-            <span class="rsd-widget__finding-label">Primary finding</span>
-            <span class="rsd-widget__finding-val">3 critical disconnects between spend and revenue</span>
-          </div>
-          <a href="#audit" class="btn btn--primary btn--sm">Get My Revenue Diagnostic</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- QUALIFIER BAND -->
+<div class="qual">
+  <div class="container">
+    <div class="qual__grid">
+      <div>
+        <p class="qual__head qual__head--fit">Built for</p>
+        <ul class="qual__list qual__list--fit">
+          <li>$1M to $20M ARR with active acquisition spend</li>
+          <li>Paid, content, and SEO already running</li>
+          <li>CRM in place, pipeline attribution unclear</li>
+          <li>CAC climbing without a clear channel explanation</li>
+        </ul>
+      </div>
+      <div>
+        <p class="qual__head qual__head--not">Not for</p>
+        <ul class="qual__list qual__list--not">
+          <li>Pre-revenue or no active acquisition spend</li>
+          <li>Looking for one-off campaign setup only</li>
+          <li>No CRM or pipeline tracking in place</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DIAGNOSIS -->
+<section class="diag">
+  <div class="container">
+    <div class="diag__inner">
+      <div class="diag__rail">
+        <span class="sec-mark sec-mark--light">01 / Diagnosis</span>
+        <h2>Spending on growth, still unable to say what creates pipeline.</h2>
+        <p>Paid is running. Content is publishing. SEO is producing traffic. Email sequences are live. But the channels are not connected to each other, attribution stops at last click, and CRM source data is incomplete on a meaningful portion of pipeline.</p>
+        <p><strong>The result:</strong> budget decisions are made on last-click data that over-credits the final touch and hides the channels that created the opportunity. CAC climbs. The explanation stays unclear. More budget gets poured into a system that is already fragmented.</p>
+        <div class="diag__note">
+          <span class="mono">Worked example</span>
+          <p>A prospect finds you through LinkedIn, reads three posts, sees a retargeting ad, attends a webinar, then searches your brand name and requests a demo. Last click credits brand search. LinkedIn, content, retargeting, and nurture disappear from the decision. Budget follows the wrong signal.</p>
+        </div>
+      </div>
+      <div class="dtable">
+        <div class="dtable__head"><span>System component</span><span>State</span></div>
+        <div class="drow">
+          <div><div class="drow__label">Attribution model</div><div class="drow__sub">Last click only, multi-touch contribution invisible</div></div>
+          <span class="dflag dflag--leak">Misleading</span>
+        </div>
+        <div class="drow">
+          <div><div class="drow__label">CRM source data</div><div class="drow__sub">Pipeline source fields incomplete or missing on deals</div></div>
+          <span class="dflag dflag--leak">Incomplete</span>
+        </div>
+        <div class="drow">
+          <div><div class="drow__label">Paid to pipeline</div><div class="drow__sub">Spend tracked in ads, not connected to CRM pipeline</div></div>
+          <span class="dflag dflag--leak">Broken</span>
+        </div>
+        <div class="drow">
+          <div><div class="drow__label">Landing page conversion</div><div class="drow__sub">Generic pages not matched to segment or intent</div></div>
+          <span class="dflag dflag--leak">Leaking</span>
+        </div>
+        <div class="drow">
+          <div><div class="drow__label">Channel coordination</div><div class="drow__sub">Paid, SEO, content, email running independently</div></div>
+          <span class="dflag dflag--warn">Siloed</span>
+        </div>
+        <div class="drow">
+          <div><div class="drow__label">Optimization cadence</div><div class="drow__sub">No weekly review connecting spend to pipeline</div></div>
+          <span class="dflag dflag--warn">Ad hoc</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BEST FIT STRIP -->
-<div style="background:var(--lt-bg);border-top:1px solid var(--lt-border);border-bottom:1px solid var(--lt-border);padding:1.5rem 0;">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
-      <div>
-        <p style="font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#1A7A4A;margin-bottom:0.75rem;">Best fit</p>
-        <div style="display:flex;flex-direction:column;gap:0.5rem;">
-          <div style="display:flex;gap:0.65rem;align-items:flex-start;font-size:0.8rem;color:var(--lt-muted);">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #1A7A4A;color:#1A7A4A;font-size:0.6rem;font-weight:700;flex-shrink:0;margin-top:0.05rem;">&#10003;</span>$1M to $20M ARR with active acquisition spend
-          </div>
-          <div style="display:flex;gap:0.65rem;align-items:flex-start;font-size:0.8rem;color:var(--lt-muted);">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #1A7A4A;color:#1A7A4A;font-size:0.6rem;font-weight:700;flex-shrink:0;margin-top:0.05rem;">&#10003;</span>Paid, content, and SEO already running
-          </div>
-          <div style="display:flex;gap:0.65rem;align-items:flex-start;font-size:0.8rem;color:var(--lt-muted);">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #1A7A4A;color:#1A7A4A;font-size:0.6rem;font-weight:700;flex-shrink:0;margin-top:0.05rem;">&#10003;</span>CRM in place, pipeline attribution unclear
-          </div>
-          <div style="display:flex;gap:0.65rem;align-items:flex-start;font-size:0.8rem;color:var(--lt-muted);">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #1A7A4A;color:#1A7A4A;font-size:0.6rem;font-weight:700;flex-shrink:0;margin-top:0.05rem;">&#10003;</span>CAC climbing without a clear channel explanation
-          </div>
-        </div>
-      </div>
-      <div>
-        <p style="font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--lt-subtle);margin-bottom:0.75rem;">Not a fit</p>
-        <div style="display:flex;flex-direction:column;gap:0.5rem;">
-          <div style="display:flex;gap:0.65rem;align-items:flex-start;font-size:0.8rem;color:var(--lt-subtle);">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #D95F52;color:#D95F52;font-size:0.65rem;font-weight:700;flex-shrink:0;margin-top:0.05rem;">&#215;</span>Pre-revenue or no active acquisition spend
-          </div>
-          <div style="display:flex;gap:0.65rem;align-items:flex-start;font-size:0.8rem;color:var(--lt-subtle);">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #D95F52;color:#D95F52;font-size:0.65rem;font-weight:700;flex-shrink:0;margin-top:0.05rem;">&#215;</span>Looking for one-off campaign setup only
-          </div>
-          <div style="display:flex;gap:0.65rem;align-items:flex-start;font-size:0.8rem;color:var(--lt-subtle);">
-            <span style="display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;border:1.5px solid #D95F52;color:#D95F52;font-size:0.65rem;font-weight:700;flex-shrink:0;margin-top:0.05rem;">&#215;</span>No CRM or pipeline tracking in place
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SIGNALS -->
-<div class="signals">
-  <div class="container">
-    <div class="signals__inner">
-      <span class="signals__label">Common signals</span>
-      <ul class="signals__list">
-        <li class="signals__item">Attribution broken</li>
-        <li class="signals__item">CRM source fields empty</li>
-        <li class="signals__item">Pipeline unpredictable</li>
-        <li class="signals__item">Channels not coordinated</li>
-        <li class="signals__item">CAC climbing</li>
-        <li class="signals__item">Content not converting</li>
-        <li class="signals__item">Budget decisions on guesswork</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- PROBLEM - light -->
-<section class="problem">
-  <div class="container">
-    <div class="problem__inner">
-      <div class="problem__copy">
-        <span class="eyebrow eyebrow--muted" style="display:block;margin-bottom:1rem;">The Problem</span>
-        <h2>Spending on growth but still cannot tell what creates pipeline.</h2>
-        <p>Paid is running. Content is publishing. SEO is producing traffic. Email sequences are live. But the channels are not connected to each other, attribution stops at last click, and CRM source data is incomplete for a significant portion of pipeline.</p>
-        <p><strong>The result:</strong> budget decisions are made on last-click data that over-credits the final touch and hides the channels that created the opportunity. CAC climbs. The explanation is unclear. More budget gets added to a system that is already fragmented.</p>
-        <div class="problem__callout">
-          <p>In many audits, last-click reporting misrepresents which channels are building pipeline. A prospect finds you through LinkedIn, reads three blog posts, sees a retargeting ad, attends a webinar, then searches your brand name and requests a demo. Last-click credits brand search. LinkedIn, content, retargeting, and nurture disappear from the decision. Budget follows the wrong signal.</p>
-        </div>
-      </div>
-      <div class="signal-list">
-        <div class="signal-row">
-          <div><div class="signal-row__label">Attribution model</div><div class="signal-row__sub">Last-click only, multi-touch contribution invisible</div></div>
-          <span class="signal-row__status status-broken">Misleading</span>
-        </div>
-        <div class="signal-row">
-          <div><div class="signal-row__label">CRM source data</div><div class="signal-row__sub">Pipeline source fields incomplete or missing on deals</div></div>
-          <span class="signal-row__status status-broken">Incomplete</span>
-        </div>
-        <div class="signal-row">
-          <div><div class="signal-row__label">Paid to pipeline</div><div class="signal-row__sub">Spend tracked in ads, not connected to CRM pipeline</div></div>
-          <span class="signal-row__status status-broken">Broken</span>
-        </div>
-        <div class="signal-row">
-          <div><div class="signal-row__label">Landing page conversion</div><div class="signal-row__sub">Generic pages not matched to segment or intent</div></div>
-          <span class="signal-row__status status-broken">Leaking</span>
-        </div>
-        <div class="signal-row">
-          <div><div class="signal-row__label">Channel coordination</div><div class="signal-row__sub">Paid, SEO, content, email running independently</div></div>
-          <span class="signal-row__status status-missing">Siloed</span>
-        </div>
-        <div class="signal-row">
-          <div><div class="signal-row__label">Optimization cadence</div><div class="signal-row__sub">No weekly review connecting spend to pipeline</div></div>
-          <span class="signal-row__status status-broken">Ad hoc</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVENUE SYSTEM MAP - dark -->
+<!-- REVENUE SYSTEM MAP -->
 <section class="sysmap" id="sysmap">
   <div class="container">
     <div class="sysmap__header">
       <div>
-        <span class="eyebrow eyebrow--subtle">The Revenue System Map</span>
-        <h2>Every stage between demand and closed revenue can disconnect.</h2>
+        <span class="sec-mark sec-mark--dark">02 / The System Map</span>
+        <h2>Every stage between demand and revenue can quietly disconnect.</h2>
       </div>
       <div class="sysmap__header-right">
         <div class="sysmap__legend">
-          <span class="legend-item"><span class="legend-dot legend-dot--leak"></span>Disconnect</span>
           <span class="legend-item"><span class="legend-dot legend-dot--ok"></span>Connected</span>
+          <span class="legend-item"><span class="legend-dot legend-dot--leak"></span>Disconnect</span>
         </div>
         <a href="#audit" class="btn btn--ghost btn--sm">Get My Revenue Diagnostic</a>
       </div>
     </div>
-    <div class="pipeline">
-      <div class="pipe-row">
-        <div class="pipe-axis">
-          <span class="pipe-axis__label">Channels</span>
-          <span class="pipe-axis__label">Where it breaks</span>
+
+    <div class="flowbar">
+      <div class="fstation fstation--break">
+        <div class="fstation__top"><span class="fstation__dot"></span><span class="fbreak">&#215;</span></div>
+        <span class="fstation__code">01</span>
+        <span class="fstation__name">Demand Gen</span>
+        <span class="fstation__state fstation__state--ok">Flowing</span>
+      </div>
+      <div class="fstation fstation--leak fstation--break">
+        <div class="fstation__top"><span class="fstation__dot"></span><span class="fbreak">&#215;</span></div>
+        <span class="fstation__code">02</span>
+        <span class="fstation__name">Landing Pages</span>
+        <span class="fstation__state fstation__state--leak">Leaking</span>
+      </div>
+      <div class="fstation fstation--leak">
+        <div class="fstation__top"><span class="fstation__dot"></span></div>
+        <span class="fstation__code">03</span>
+        <span class="fstation__name">Attribution</span>
+        <span class="fstation__state fstation__state--leak">Broken</span>
+      </div>
+      <div class="fstation">
+        <div class="fstation__top"><span class="fstation__dot"></span></div>
+        <span class="fstation__code">04</span>
+        <span class="fstation__name">Nurture</span>
+        <span class="fstation__state fstation__state--ok">Flowing</span>
+      </div>
+      <div class="fstation fstation--break">
+        <div class="fstation__top"><span class="fstation__dot"></span><span class="fbreak">&#215;</span></div>
+        <span class="fstation__code">05</span>
+        <span class="fstation__name">Pipeline</span>
+        <span class="fstation__state fstation__state--ok">Flowing</span>
+      </div>
+      <div class="fstation fstation--leak">
+        <div class="fstation__top"><span class="fstation__dot"></span></div>
+        <span class="fstation__code">06</span>
+        <span class="fstation__name">Revenue</span>
+        <span class="fstation__state fstation__state--leak">No visibility</span>
+      </div>
+    </div>
+
+    <div class="findings">
+      <div class="finding">
+        <span class="finding__code">02</span>
+        <div>
+          <div class="finding__head"><span class="finding__name">Landing Pages</span><span class="finding__tag">High leak</span></div>
+          <ul class="finding__pts">
+            <li>Generic pages, not segmented</li>
+            <li>No ICP-specific messaging</li>
+            <li>CTA not matched to intent</li>
+          </ul>
         </div>
-        <div style="flex:1;overflow:hidden;">
-          <div class="pipe-stages pipe-header">
-            <div class="pipe-stage"><p class="pipe-stage__num">01</p><p class="pipe-stage__name">Demand Gen</p></div>
-            <div class="pipe-stage pipe-stage--leak"><p class="pipe-stage__num">02</p><p class="pipe-stage__name">Landing Pages</p></div>
-            <div class="pipe-stage pipe-stage--leak"><p class="pipe-stage__num">03</p><p class="pipe-stage__name">Attribution</p></div>
-            <div class="pipe-stage"><p class="pipe-stage__num">04</p><p class="pipe-stage__name">Nurture</p></div>
-            <div class="pipe-stage"><p class="pipe-stage__num">05</p><p class="pipe-stage__name">Pipeline</p></div>
-            <div class="pipe-stage pipe-stage--leak"><p class="pipe-stage__num">06</p><p class="pipe-stage__name">Revenue</p></div>
-          </div>
-          <div class="pipe-stages pipe-body">
-            <div class="pipe-stage">
-              <ul class="pipe-leaks">
-                <li>Channels not coordinated</li>
-                <li>Budget by gut, not data</li>
-                <li>No shared ICP signal</li>
-              </ul>
-            </div>
-            <div class="pipe-stage pipe-stage--leak">
-              <ul class="pipe-leaks">
-                <li>Generic pages, not segmented</li>
-                <li>No ICP-specific messaging</li>
-                <li>CTA not matched to intent</li>
-              </ul>
-              <span class="pipe-stage__tag">High leak</span>
-            </div>
-            <div class="pipe-stage pipe-stage--leak">
-              <ul class="pipe-leaks">
-                <li>Last-click only</li>
-                <li>Multi-touch invisible</li>
-                <li>CRM source fields empty</li>
-              </ul>
-              <span class="pipe-stage__tag">Broken</span>
-            </div>
-            <div class="pipe-stage">
-              <ul class="pipe-leaks">
-                <li>Not triggered by paid signal</li>
-                <li>Sequences time-based only</li>
-                <li>No handoff logic to sales</li>
-              </ul>
-            </div>
-            <div class="pipe-stage">
-              <ul class="pipe-leaks">
-                <li>Source not in CRM</li>
-                <li>Deal influence unknown</li>
-                <li>Velocity not tracked</li>
-              </ul>
-            </div>
-            <div class="pipe-stage pipe-stage--leak">
-              <ul class="pipe-leaks">
-                <li>CAC unknown by channel</li>
-                <li>Budget allocation blind</li>
-                <li>No compounding system</li>
-              </ul>
-              <span class="pipe-stage__tag">No visibility</span>
-            </div>
-          </div>
+      </div>
+      <div class="finding">
+        <span class="finding__code">03</span>
+        <div>
+          <div class="finding__head"><span class="finding__name">Attribution</span><span class="finding__tag">Broken</span></div>
+          <ul class="finding__pts">
+            <li>Last click only</li>
+            <li>Multi-touch invisible</li>
+            <li>CRM source fields empty</li>
+          </ul>
+        </div>
+      </div>
+      <div class="finding">
+        <span class="finding__code">06</span>
+        <div>
+          <div class="finding__head"><span class="finding__name">Revenue</span><span class="finding__tag">No visibility</span></div>
+          <ul class="finding__pts">
+            <li>CAC unknown by channel</li>
+            <li>Budget allocation blind</li>
+            <li>No compounding system</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SPLIT -->
-<div class="split">
-  <div class="split__dark">
-    <p class="split__label split__label--dark">Fragmented system</p>
-    <p class="split__h3 split__h3--dark">What most B2B SaaS revenue systems look like right now</p>
-    <ul class="split-list split-list--dark">
-      <li>Paid, SEO, content, and email running independently with no shared audience signal</li>
-      <li>Attribution stops at last click: multi-touch channel contribution is invisible</li>
-      <li>Landing pages generic, not matched to ICP, segment, or buying intent</li>
-      <li>CRM source fields empty on a meaningful portion of pipeline and closed deals</li>
-      <li>CAC climbing without a clear understanding of which channels are responsible</li>
-      <li>No weekly review connecting spend to pipeline: optimization reactive and ad hoc</li>
-    </ul>
-  </div>
-  <div class="split__light">
-    <p class="split__label split__label--light">Connected system</p>
-    <p class="split__h3 split__h3--light">What the same stack looks like when the system works</p>
-    <ul class="split-list split-list--light">
-      <li>Paid, SEO, content, and email coordinated around shared ICP segments and buying signals</li>
-      <li>Multi-touch attribution shows which channels are contributing to pipeline across the journey</li>
-      <li>Landing pages matched to segment, channel, and intent: trial, demo, or content by stage</li>
-      <li>Every deal in the CRM has a source path connected to the channels that influenced it</li>
-      <li>CAC tracked by channel, segment, and quarter: budget decisions are based on pipeline data</li>
-      <li>Weekly review cadence: what changed, what to test, what to scale or stop</li>
-    </ul>
-  </div>
-</div>
-
-<!-- WHAT WE FIX - light -->
-<section class="fixes">
+<!-- OPERATING SYSTEM (what we fix) -->
+<section class="opsys">
   <div class="container">
-    <div class="fixes__top">
+    <div class="opsys__top">
       <div>
-        <span class="eyebrow eyebrow--muted" style="display:block;margin-bottom:0.75rem;">What VonClaro Fixes</span>
-        <h2>Five parts of the revenue system. All connected.</h2>
+        <span class="sec-mark sec-mark--light">03 / What VonClaro Connects</span>
+        <h2>Five parts of the revenue system, wired into one.</h2>
       </div>
-      <p>We design and operate the full revenue system: demand generation, conversion infrastructure, attribution, nurture, and the optimization layer that connects them so performance compounds over time rather than running in parallel with no shared signal.</p>
+      <p>Most agencies run these five as separate services with separate metrics. We design and operate them as a single system, so demand connects to pipeline and performance compounds over time instead of running in parallel with no shared signal. When it is connected, every deal in the CRM carries a source path, and CAC is tracked by channel, segment, and quarter.</p>
     </div>
-    <div class="fixes__list">
-      <div class="fix-row">
-        <span class="fix-row__num">01</span>
-        <div><p class="fix-row__title">Demand Creation</p><span class="fix-row__tag">Paid + SEO + Content</span></div>
-        <p class="fix-row__desc">Google Ads, LinkedIn, and content working toward the same ICP segments with coordinated messaging. Budgets allocated by channel contribution to pipeline, not by impression share or last-click vanity metrics.</p>
-      </div>
-      <div class="fix-row">
-        <span class="fix-row__num">02</span>
-        <div><p class="fix-row__title">Conversion Infrastructure</p><span class="fix-row__tag">CRO + Landing Pages</span></div>
-        <p class="fix-row__desc">Landing pages matched to segment and intent: demo pages for high-intent paid, trial pages for bottom-of-funnel content, educational pages for awareness channels. Every page with a single, tested conversion path and no generic messaging.</p>
-      </div>
-      <div class="fix-row">
-        <span class="fix-row__num">03</span>
-        <div><p class="fix-row__title">Attribution and CRM Foundation</p><span class="fix-row__tag">Attribution + CRM Source Data</span></div>
-        <p class="fix-row__desc">Multi-touch attribution connected to your CRM so pipeline source is visible at the deal level. UTM coverage across all paid channels. CRM source fields populated. CAC calculable by channel and segment. Budget decisions made on real signal.</p>
-      </div>
-      <div class="fix-row">
-        <span class="fix-row__num">04</span>
-        <div><p class="fix-row__title">Nurture and Handoff</p><span class="fix-row__tag">Email + Sales Alignment</span></div>
-        <p class="fix-row__desc">Email sequences triggered by paid and content signals, not just time. Sales handoff logic that routes the right leads at the right moment. No leads sitting in a generic drip while sales waits for qualified pipeline.</p>
-      </div>
-      <div class="fix-row">
-        <span class="fix-row__num">05</span>
-        <div><p class="fix-row__title">Optimization Layer</p><span class="fix-row__tag">Reporting + Weekly Cadence</span></div>
-        <p class="fix-row__desc">Weekly review of what changed and why. Monthly reporting on CAC, pipeline contribution by channel, and conversion rate by segment. Structured experimentation so the system compounds rather than plateaus.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DIAGNOSTIC EXAMPLE - light -->
-<section style="background:var(--lt-bg-soft);padding:4rem 0;border-top:1px solid var(--lt-border);border-bottom:1px solid var(--lt-border);">
-  <div class="container">
-    <div style="max-width:740px;margin:0 auto;">
-      <span class="eyebrow eyebrow--muted" style="display:block;margin-bottom:1rem;">Example Diagnostic Finding</span>
-      <div style="background:#FDFAF5;border:1px solid var(--lt-border);border-left:3px solid var(--brass);border-radius:0 10px 10px 0;padding:1.75rem 2rem;">
-        <p style="font-size:0.68rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--brass);margin-bottom:0.85rem;">Illustrative example. Not a real client result.</p>
-        <p style="font-size:0.95rem;font-weight:600;color:var(--lt-text);margin-bottom:0.75rem;line-height:1.4;">Paid search is producing trials, but 60% of spend is going to low-intent segments that rarely convert to pipeline.</p>
-        <p style="font-size:0.875rem;color:var(--lt-muted);line-height:1.7;">The issue is not volume. Clicks and trials are coming in. The issue is conversion quality, routing, and follow-up. High-intent searches (branded, competitor, problem-aware) are converting at 3x the rate of broad and informational traffic, but the budget is spread roughly evenly across all of them. Trial-to-pipeline conversion is also weak: no urgency sequence, no intent-based routing to sales, and no visibility into which trials came from which campaigns. The fix is not more spend. It is restructuring the campaign, tightening the trial routing, and connecting trial source data to the CRM so pipeline attribution becomes visible.</p>
-      </div>
-      <p style="font-size:0.75rem;color:var(--lt-subtle);margin-top:1rem;">This is the kind of finding the written diagnostic surfaces: not a general recommendation, but a specific disconnect with a specific fix order.</p>
-    </div>
-  </div>
-</section>
-
-<!-- WHY VONCLARO - dark -->
-<section style="background:var(--vc-bg-soft);padding:5rem 0;border-top:1px solid var(--vc-border);">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
-      <div>
-        <span class="eyebrow eyebrow--subtle" style="display:block;margin-bottom:0.75rem;">Why VonClaro</span>
-        <h2 style="font-family:var(--font-disp);font-weight:300;font-size:clamp(1.9rem,3vw,2.6rem);color:var(--vc-text);letter-spacing:-0.02em;line-height:1.1;margin-top:0.75rem;">Not a channel agency. Not a strategy deck. The operating layer in between.</h2>
-        <p style="font-size:0.875rem;color:var(--vc-text-muted);line-height:1.7;margin-top:1.25rem;">Most agencies optimize channels in isolation and deliver a monthly report. Most consultants deliver a strategy and move on. VonClaro works in the operating layer between them: campaigns, landing pages, attribution wiring, CRM source data, nurture sequences, pipeline reporting, and weekly optimization.</p>
-        <p style="font-size:0.875rem;color:var(--vc-text-muted);line-height:1.7;margin-top:0.75rem;">The goal is a revenue system that gets sharper every quarter: cleaner attribution, lower CAC, more pipeline from the same spend.</p>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:1rem;">
-        <div style="background:var(--vc-surface);border:1px solid var(--vc-border);border-radius:10px;padding:1.25rem 1.5rem;">
-          <p style="font-size:0.75rem;font-weight:600;color:var(--vc-text);margin-bottom:0.3rem;">Channel agencies</p>
-          <p style="font-size:0.8rem;color:var(--vc-text-subtle);">Optimize individual channels. Report on clicks and impressions. Do not connect spend to pipeline in your CRM.</p>
+    <div class="opsys__stack">
+      <div class="layer">
+        <div>
+          <span class="layer__code">Layer 01</span>
+          <p class="layer__title">Demand Creation</p>
+          <span class="layer__tag">Paid + SEO + Content</span>
         </div>
-        <div style="background:var(--vc-surface);border:1px solid var(--vc-border);border-radius:10px;padding:1.25rem 1.5rem;">
-          <p style="font-size:0.75rem;font-weight:600;color:var(--vc-text);margin-bottom:0.3rem;">Strategy consultants</p>
-          <p style="font-size:0.8rem;color:var(--vc-text-subtle);">Deliver a framework and recommendations. Do not implement, operate, or optimize the system week to week.</p>
+        <p class="layer__desc">Google Ads, LinkedIn, and content working toward the same ICP segments with coordinated messaging. Budget allocated by channel contribution to pipeline, not by impression share or last-click vanity metrics.</p>
+      </div>
+      <div class="layer">
+        <div>
+          <span class="layer__code">Layer 02</span>
+          <p class="layer__title">Conversion Infrastructure</p>
+          <span class="layer__tag">CRO + Landing Pages</span>
         </div>
-        <div style="background:var(--vc-surface);border:1px solid var(--vc-border);border-left:2px solid var(--vc-green);border-radius:0 10px 10px 0;padding:1.25rem 1.5rem;">
-          <p style="font-size:0.75rem;font-weight:600;color:var(--vc-green);margin-bottom:0.3rem;">VonClaro</p>
-          <p style="font-size:0.8rem;color:var(--vc-text-muted);">Designs, builds, and operates the full system: campaigns, attribution, landing pages, CRM source data, nurture, reporting, and weekly optimization cadence.</p>
+        <p class="layer__desc">Landing pages matched to segment and intent: demo pages for high-intent paid, trial pages for bottom-of-funnel content, educational pages for awareness channels. Every page with a single, tested conversion path and no generic messaging.</p>
+      </div>
+      <div class="layer">
+        <div>
+          <span class="layer__code">Layer 03</span>
+          <p class="layer__title">Attribution and CRM Foundation</p>
+          <span class="layer__tag">Attribution + Source Data</span>
+        </div>
+        <p class="layer__desc">Multi-touch attribution connected to your CRM so pipeline source is visible at the deal level. UTM coverage across all paid channels. CRM source fields populated. CAC calculable by channel and segment. Budget decisions made on real signal.</p>
+      </div>
+      <div class="layer">
+        <div>
+          <span class="layer__code">Layer 04</span>
+          <p class="layer__title">Nurture and Handoff</p>
+          <span class="layer__tag">Email + Sales Alignment</span>
+        </div>
+        <p class="layer__desc">Email sequences triggered by paid and content signals, not just time. Sales handoff logic that routes the right leads at the right moment. No leads sitting in a generic drip while sales waits for qualified pipeline.</p>
+      </div>
+      <div class="layer">
+        <div>
+          <span class="layer__code">Layer 05</span>
+          <p class="layer__title">Optimization Layer</p>
+          <span class="layer__tag">Reporting + Weekly Cadence</span>
+        </div>
+        <p class="layer__desc">Weekly review of what changed and why. Monthly reporting on CAC, pipeline contribution by channel, and conversion rate by segment. Structured experimentation so the system compounds rather than plateaus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY VONCLARO -->
+<section class="why">
+  <div class="container">
+    <div class="why__inner">
+      <div class="why__copy">
+        <span class="sec-mark sec-mark--dark">04 / Why VonClaro</span>
+        <h2>Not a channel agency. Not a strategy deck. The operating layer in between.</h2>
+        <p>Most agencies optimize channels in isolation and deliver a monthly report. Most consultants deliver a strategy and move on. VonClaro works in the operating layer between them: campaigns, landing pages, attribution wiring, CRM source data, nurture sequences, pipeline reporting, and weekly optimization.</p>
+        <p>The goal is a revenue system that gets sharper every quarter: cleaner attribution, lower CAC, more pipeline from the same spend.</p>
+      </div>
+      <div class="cmp">
+        <div class="cmp__row">
+          <p class="cmp__label">Channel agencies</p>
+          <p class="cmp__desc">Optimize individual channels. Report on clicks and impressions. Do not connect spend to pipeline in your CRM.</p>
+        </div>
+        <div class="cmp__row">
+          <p class="cmp__label">Strategy consultants</p>
+          <p class="cmp__desc">Deliver a framework and recommendations. Do not implement, operate, or optimize the system week to week.</p>
+        </div>
+        <div class="cmp__row cmp__row--vc">
+          <p class="cmp__label">VonClaro</p>
+          <p class="cmp__desc">Designs, builds, and operates the full system: campaigns, attribution, landing pages, CRM source data, nurture, reporting, and a weekly optimization cadence.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MID-PAGE CTA PANEL -->
-<section style="background:var(--vc-bg);padding:3.5rem 0;border-top:1px solid var(--vc-border);border-bottom:1px solid var(--vc-border);">
-  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;">
-    <div>
-      <h3 style="font-family:var(--font-disp);font-weight:300;font-size:clamp(1.4rem,2.5vw,1.9rem);color:var(--vc-text);letter-spacing:-0.02em;margin-bottom:0.5rem;">Want us to find the disconnects in your system?</h3>
-      <p style="font-size:0.875rem;color:var(--vc-text-muted);">Written diagnostic delivered within 2 business days. No sales call required.</p>
-    </div>
-    <a href="#audit" class="btn btn--primary">Get My Revenue Diagnostic</a>
-  </div>
-</section>
-
-<!-- DESIGN BUILD OPERATE - dark -->
-<section class="dbo">
+<!-- PROCESS -->
+<section class="process">
   <div class="container">
-    <div class="dbo__inner">
-      <div class="dbo__intro">
-        <span class="eyebrow eyebrow--green" style="display:block;margin-bottom:0.75rem;">How We Work</span>
+    <div class="process__inner">
+      <div class="process__intro">
+        <span class="sec-mark sec-mark--dark">05 / How We Work</span>
         <h2>Design the system. Build it. Operate it continuously.</h2>
-        <p style="font-size:0.875rem;color:var(--vc-text-muted);line-height:1.7;margin-top:1.25rem;">Most agencies deliver a channel strategy and a monthly report. We deliver a revenue system: designed to connect demand to pipeline, built to wire channels to your CRM, and operated continuously so attribution gets cleaner and CAC gets lower every quarter.</p>
-        <div style="margin-top:2rem;">
-          <a href="#audit" class="btn btn--primary">Get My Revenue Diagnostic</a>
-        </div>
+        <p>Most agencies deliver a channel strategy and a monthly report. We deliver a revenue system: designed to connect demand to pipeline, built to wire channels to your CRM, and operated continuously so attribution gets cleaner and CAC gets lower every quarter.</p>
+        <a href="#audit" class="btn btn--primary">Get My Revenue Diagnostic</a>
       </div>
-      <div class="dbo__timeline">
-        <div class="dbo__phase">
-          <div class="dbo__phase-dot"></div>
-          <p class="dbo__phase-label">01 - Design</p>
+      <div class="process__timeline">
+        <div class="phase">
+          <p class="phase__label">Phase 01 / Design</p>
           <h3>Revenue System Design</h3>
           <p>We map your full acquisition system: which channels reach which ICP segments, where attribution is broken, where CRM source data is missing, where conversion is leaking, and what the optimization layer should look like. You see the full picture before we build anything.</p>
         </div>
-        <div class="dbo__phase">
-          <div class="dbo__phase-dot"></div>
-          <p class="dbo__phase-label">02 - Build</p>
+        <div class="phase">
+          <p class="phase__label">Phase 02 / Build</p>
           <h3>System Build</h3>
           <p>We build or rebuild each component. Campaigns restructured by segment and intent. Landing pages matched to buying stage. Attribution wired to your CRM with UTM coverage and source field population. Email sequences triggered by the right signals. Reporting connected to pipeline, not just traffic.</p>
         </div>
-        <div class="dbo__phase">
-          <div class="dbo__phase-dot"></div>
-          <p class="dbo__phase-label">03 - Operate</p>
+        <div class="phase">
+          <p class="phase__label">Phase 03 / Operate</p>
           <h3>Continuous Operation</h3>
           <p>We run and continuously improve the system. Weekly reviews of what changed. Monthly CAC and pipeline attribution reporting. Structured experimentation across every component. The system gets sharper every quarter.</p>
         </div>
@@ -473,40 +375,60 @@
   </div>
 </section>
 
-<!-- AUDIT FORM - warm -->
-<section class="wyg" id="audit">
+<!-- SAMPLE FINDING -->
+<section class="sample">
   <div class="container">
-    <div class="wyg__inner">
-      <div class="wyg__copy">
-        <span class="eyebrow eyebrow--brass" style="display:block;margin-bottom:0.75rem;">Written Diagnostic</span>
+    <div class="sample__inner">
+      <span class="sec-mark sec-mark--light">06 / A Sample Finding</span>
+      <div class="sample__doc">
+        <p class="sample__meta">Illustrative example. Not a real client result.</p>
+        <p class="sample__claim">Paid search is producing trials, but 60% of spend is going to low-intent segments that rarely convert to pipeline.</p>
+        <p class="sample__body">The issue is not volume. Clicks and trials are coming in. The issue is conversion quality, routing, and follow-up. High-intent searches (branded, competitor, problem-aware) are converting at 3x the rate of broad and informational traffic, but the budget is spread roughly evenly across all of them. Trial-to-pipeline conversion is also weak: no urgency sequence, no intent-based routing to sales, and no visibility into which trials came from which campaigns. The fix is not more spend. It is restructuring the campaign, tightening the trial routing, and connecting trial source data to the CRM so pipeline attribution becomes visible.</p>
+      </div>
+      <p class="sample__foot">This is the kind of finding the written diagnostic surfaces: not a general recommendation, but a specific disconnect with a specific fix order.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIT FORM -->
+<section class="audit" id="audit">
+  <div class="container">
+    <div class="audit__inner">
+      <div class="audit__copy">
+        <span class="sec-mark sec-mark--light">07 / The Diagnostic</span>
         <h2>Get a written diagnostic of your revenue system.</h2>
         <p>We review your full acquisition stack and deliver a written diagnostic within 2 business days. Not a sales call. A written document identifying every disconnect and a prioritized list of what to fix before adding more spend.</p>
-        <p style="font-size:0.875rem;color:var(--lt-muted);margin-top:0.5rem;">You will get:</p>
-        <ul class="wyg__list">
+        <ul class="audit__terms">
+          <li>Written diagnostic delivered within 2 business days</li>
+          <li>B2B SaaS only</li>
+          <li>For companies with active acquisition spend</li>
+        </ul>
+        <p class="audit__deliver-label">What you get</p>
+        <ul class="audit__list">
           <li>Where spend is not connecting to pipeline in your CRM</li>
           <li>Whether attribution is misleading your budget decisions</li>
           <li>Which landing pages or CTAs are leaking intent</li>
           <li>Where content and nurture are disconnected from buying signals</li>
           <li>What to fix first before increasing spend on any channel</li>
         </ul>
-        <div class="wyg__checklist">
-          <p class="wyg__checklist-label">Diagnostic covers</p>
-          <div class="wyg__checklist-items">
-            <span class="wyg__check">Google Ads</span>
-            <span class="wyg__check">LinkedIn</span>
-            <span class="wyg__check">Attribution</span>
-            <span class="wyg__check">CRM Source Data</span>
-            <span class="wyg__check">Landing Pages</span>
-            <span class="wyg__check">SEO and Content</span>
-            <span class="wyg__check">Email Nurture</span>
-            <span class="wyg__check">CRO</span>
+        <div class="audit__coverage">
+          <p class="audit__coverage-label">Diagnostic covers</p>
+          <div class="audit__chips">
+            <span class="chip">Google Ads</span>
+            <span class="chip">LinkedIn</span>
+            <span class="chip">Attribution</span>
+            <span class="chip">CRM Source Data</span>
+            <span class="chip">Landing Pages</span>
+            <span class="chip">SEO and Content</span>
+            <span class="chip">Email Nurture</span>
+            <span class="chip">CRO</span>
           </div>
         </div>
       </div>
       <div>
         <form class="audit-form" name="b2b-revenue-audit" method="POST" data-netlify="true" action="/thank-you.html">
           <input type="hidden" name="form-name" value="b2b-revenue-audit" />
-          <p style="font-size:0.72rem;font-weight:600;color:var(--lt-text);margin-bottom:1rem;">Written diagnostic delivered within 2 business days.</p>
+          <p class="audit-form__lead">Written diagnostic delivered within 2 business days.</p>
           <div class="form-group">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" placeholder="Alex Chen" required />
@@ -528,8 +450,8 @@
             <select id="arr" name="arr" required>
               <option value="" disabled selected>Select range</option>
               <option value="under-1m">Under $1M ARR</option>
-              <option value="1m-5m">$1M - $5M ARR</option>
-              <option value="5m-20m">$5M - $20M ARR</option>
+              <option value="1m-5m">$1M to $5M ARR</option>
+              <option value="5m-20m">$5M to $20M ARR</option>
               <option value="20m-plus">$20M+ ARR</option>
             </select>
           </div>
@@ -538,8 +460,8 @@
             <select id="budget" name="budget" required>
               <option value="" disabled selected>Select range</option>
               <option value="under-10k">Under $10,000/mo</option>
-              <option value="10k-30k">$10,000 - $30,000/mo</option>
-              <option value="30k-100k">$30,000 - $100,000/mo</option>
+              <option value="10k-30k">$10,000 to $30,000/mo</option>
+              <option value="30k-100k">$30,000 to $100,000/mo</option>
               <option value="100k-plus">$100,000+/mo</option>
             </select>
           </div>
@@ -548,8 +470,8 @@
             <textarea id="problem" name="problem" placeholder="e.g. We cannot tell which channels are driving pipeline. Attribution is broken and CAC is climbing..."></textarea>
           </div>
           <button type="submit" class="form-submit-btn">Request My Written Diagnostic</button>
-          <p class="form-note">Written diagnostic within 2 business days &middot; B2B SaaS only &middot; $1M+ ARR</p>
-          <p style="font-size:0.72rem;color:var(--lt-subtle);text-align:center;margin-top:0.75rem;line-height:1.5;">If the diagnostic shows a fit, we can help design, build, and operate the fixes. If not, you still leave with a prioritized repair list.</p>
+          <p class="form-note">2 business days &middot; B2B SaaS only &middot; $1M+ ARR</p>
+          <p class="form-fine">If the diagnostic shows a fit, we can help design, build, and operate the fixes. If not, you still leave with a prioritized repair list.</p>
         </form>
       </div>
     </div>
